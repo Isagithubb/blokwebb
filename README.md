@@ -22,7 +22,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Voornamelijk responsive,  als dat goed is gelukt lijkt het mij leuk om ook een paar dingen uit te kiezen om uit te werken aan de surface plane.(kies uit responsive óf surface plane)
+
  
 </details>
 
