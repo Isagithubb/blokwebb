@@ -1,31 +1,665 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* HOOFD NAV */
 
+/*alle linkjes in een grid zetten met 3 columns. de linkjes zonder stijl maken dus geen puntjes en streepjes meer.*/
+ 
+
+
+/*checlist boven kant pagina*/
+body>section:nth-of-type(1){
+	display: flex;
+	justify-content: center;
+	padding-top: 1em ;
+	padding-bottom: 1em;
+	border-bottom: 1px solid pink;
+	display: none;
+}
+body > section:nth-of-type(1) > img{
+	align-items: center;
+	padding-left: 1em;
+}
+body section p{
+	align-items: center;
+	padding-left: 1em;
+}
+
+
+/*nav boven grid*/
+
+body>nav:nth-of-type(1) ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: .6em;
+	align-items: center;
+	list-style: none;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(1) {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+body>nav:nth-of-type(1) ul li:nth-of-type(1) input{
+	width: 100%;
+	padding: 1em 0;
+	display: none;
+}
+body>nav:nth-of-type(1) ul li:nth-of-type(2) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: flex;
+	justify-self: center;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(3) {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+	display: none;
+}
+body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type img{
+	max-width: 2em;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(4) {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(4) input {
+	width: 100%;
+	padding: 1em 0;
+}
+
+
+
+
+/*hamburger menu uitgeklapt groot scherm die op klein scherm niet zichtbaar is*/
+
+body nav:nth-of-type(1) ul:nth-of-type(2){
+	display: flex;
+	background-color: black;
+	color: white;
+	margin: 0;
+	height: 3em;
+	font-size: 1em;
+	align-items: center;
+	justify-content: space-between;
+	display: none;
+}
+
+
+/* zorgen dat de uitklap menu absolute staan ten opzichte van de nav, niet de hele body.*/
+body > nav {
+	position: relative;
+}
+
+
+
+/* hamburger menu die uit moet klappen links naast het scherm zetten zodat je hem niet ziet en zodat hij er als het waren naar binnen kan sliden*/
+body > nav > section:last-of-type {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	z-index: 99;
+	translate: -100% 0%;
+    transition: translate 0.3s;
+}
+
+/* een class aanmaken wat er voor zorgt dat het hamburger menu die links uit de pagina staat weer op de pagina tevoorschijn komt. Deze class wordt aangeroepen in javascript.*/
+
+body > nav > section:last-of-type.openMenu {
+	translate: 0% 0%;
+}
+
+/* styling van de hamburger menu*/
+body > nav section:last-of-type article:first-of-type {
+	width: 100%;
+	background-color: white;
+	
+}
+
+body > nav section:last-of-type article:first-of-type section:first-of-type a{
+text-decoration: none;
+color: black;
+}
+body > nav section:last-of-type article:first-of-type section:first-of-type h2{
+	font-weight: lighter;
+}
+
+body > nav section:last-of-type article:nth-of-type(2) button{
+	background-color: pink;
+	border: none;
+}
+
+body > nav section:last-of-type article:nth-of-type(2) button img{
+	height: 3em;
+	padding: .6em;
+}
+
+body > nav section:last-of-type article section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0em 1em .5em .5em;
+}
+body > nav section:last-of-type article section img {
+	width: 2em;
+}
+
+body > nav section:last-of-type article ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1em;
+}
+
+body > nav section:last-of-type article ul li {
+	width: 100%;
+	padding: 1em 0.5em;
+	background-color: #F6F5F5;
+	border-radius: .2em;
+	color: black;
+	font-weight: bold;
+
+}
+
+/* zorgen dat er dingen veranderen bij een bepaalde minimale grootte van een scherm.*/
+
+@media screen and (min-width: 65em) {
+
+
+/*checlist boven kant pagina*/
+body>section:nth-of-type(1){
+	display: flex;
+	justify-content: center;
+	padding-top: 1em ;
+	padding-bottom: 1em;
+	border-bottom: 1px solid pink;
+	
+}
+body section img{
+	align-items: center;
+	padding-left: 1em;
+}
+body section p{
+	align-items: center;
+	padding-left: 1em;
+}
+
+
+/*nav boven*/
+
+body>nav:nth-of-type(1) ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: .6em;
+	align-items: center;
+	list-style: none;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(1) button {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	display: none;
+}
+body>nav:nth-of-type(1) ul li:nth-of-type(1) input{
+	width: 100%;
+	padding: 1em 0;
+	display: block;
+	justify-self: center;
+	margin-left: 2em;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(2) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: flex;
+	justify-content: center;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(3) {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type img{
+	max-width: 2em;
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(4) {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+}
+
+body>nav:nth-of-type(1) ul li:nth-of-type(4) input {
+	width: 75%;
+	padding: 1em 0;
+	align-self: center;
+	justify-content: end;
+	display: none;
+}
+
+/*hamburger menu uitgeklapt*/
+
+body nav:nth-of-type(1) ul:nth-of-type(2){
+	display: flex;
+	background-color: black;
+	color: white;
+	margin: 0;
+	height: 3em;
+	font-size: 1em;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+
+}
+
+
+/* HEADER */
+header {
+	position: relative;
+}
+
+/* achtergrond foto van plaatje zodat de button over het plaatje heen kan worden gezet zonder een grid te gebruiken*/
+header img {
+	width: 100%;
+
+}
+
+header a {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
+	background-color: white;
+	font-weight: bold;
+	border-radius: 5%;
+	font-size: 1em;
+	color: black;
+	text-decoration: none;
+	padding: 1em 2em;
+}
+
+
+
+/* NAV MAIN */
+
+main nav:nth-of-type(1) ul {
+	margin-top: 2em;
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+	width: 100%;
+}
+
+main nav:nth-of-type(1) ul li {
+	height: 4em;
+	background-color: #F6F5F5;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+main nav:nth-of-type(1) ul li img {
+	max-block-size: 3.5em;
+}
+
+main nav:nth-of-type(1) ul li a {
+	text-decoration: none;
+	color: #111;
+	font-weight: bold;
+}
+
+
+/*slider met verschillende sierraden*/
+main section:first-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F6F5F5;
+	overflow-x: auto;
+	padding-left: 2em;
+	width: 100%;
+}
+
+main > section:first-of-type {
+	flex-direction: column;
+}
+
+main > section:first-of-type > section {
+	padding: 0;
+	justify-content: flex-start;
+}
+
+main section:first-of-type article img {
+	padding-left: 0;
+}
+
+
+main section article {
+	font-size: small;
+	font-weight: lighter;
+	background-color: white;
+	margin: 1em;
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: 2;
+}
+
+main section article img {
+	max-block-size: 16em;
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+main section article button {
+	max-width: 10em;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	justify-self: end;
+	height: fit-content;
+	border: none;
+}
+
+main section article h3 {
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+
+main section article p {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	margin-top: 3em;
+}
+
+main section article img:nth-of-type(2) {
+	max-block-size: 1em;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	justify-self: baseline;
+	margin-top: 4em;
+}
+
+/*shop ode to pearls linkje*/
+main > section:first-of-type a {
+	text-decoration: none;
+	margin: 2em 0;
+	background-color: #F6F5F5;
+	font-weight: bold;
+	border-radius: 5%;
+	font-size: 1em;
+	color: black;
+	padding: 1em 1em;
+	border-style: solid;
+	border-color: black;
+}
+
+
+/*tweede glider*/
+main section:nth-of-type(2) {
+	background-color: white;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: 1;
+}
+
+main section:nth-of-type(2) h2 {
+	/* margin-top: 4em; */
+	text-align: center;
+	font-weight: lighter;
+}
+
+main section:nth-of-type(2) h3 {
+	text-align: center;
+	font-weight: lighter;
+}
+
+main section:nth-of-type(2) article {
+	display: flex;
+	overflow-x: auto;
+	margin: 1em;
+}
+
+main section:nth-of-type(2) article img {
+	padding: 0.6em;
+}
+
+
+/*plaatjes met linkjes*/
+main section:nth-of-type(3){
+	background-color: #F6F5F5;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+main section:nth-of-type(3) img {
+	width: 100%;
+	margin-bottom: 2em;
+	
+}
+
+main section:nth-of-type(3) a {
+justify-content: center;
+align-self: center;
+text-decoration: none;
+color: white;
+background-color: black;
+padding: .5em;
+border-radius: .2em;
+font-size: 1em;
+margin: 1em;
+margin-left: 13em;
+}
+
+
+
+/*footer*/
+
+footer section {
+	background-color: #F6F5F5;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+	width: 100%;
+}
+
+footer section article:first-of-type {
+	margin: 1em;
+	padding-bottom: 2em;
+
+}
+
+footer section article:first-of-type h2 {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+footer section article:first-of-type p {
+	font-size: 0.9em;
+}
+
+footer section article:first-of-type input {
+	width: 100%;
+	height: 2.7em;
+	border: solid;
+	border-color: lightgray;
+	border-radius: 0.3em;
+	font-weight: normal;
+	font-size: 1em;
+	padding-left: 1em;
+	margin-top: 1em;
+}
+
+
+
+
+footer section article:nth-of-type(2) {
+	margin: 1em;
+	padding-bottom: 2em;
+
+}
+
+footer section article:nth-of-type(2) h2 {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+footer section article:nth-of-type(2) p {
+	font-size: 0.9em;
+}
+
+footer section article:nth-of-type(2) button {
+	width: 100%;
+	height: 2.7em;
+	background-color: none;
+	border: solid;
+	font-weight: bolder;
+	margin-top: 1em;
+	background-color: #F6F5F5;
+	border-radius: .3em;
+}
+
+
+
+
+
+footer section article:nth-of-type(3) {
+	margin: 1em;
+	text-align: center;
+	padding-bottom: 2em;
+
+}
+
+footer section article:nth-of-type(3) h2 {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+footer section article:nth-of-type(3) p {
+	font-size: 0.9em;
+}
+
+footer section article:nth-of-type(3) button {
+	width: 100%;
+	height: 2.7em;
+	background-color: none;
+	border: solid;
+	font-weight: bolder;
+	margin-top: 1em;
+	background-color: #F6F5F5;
+	padding-left: .5em;
+	padding-right: .5em;
+	border-radius: .3em;
+}
+
+footer ul {
+	background-color: #111;
+	color: white;
+	padding: 0 2em;
+	list-style: none;
+
+}
+
+footer ul li {
+	font-size: 1.2em;
+	padding: 1em 0;
+	border-bottom: 1px solid #eee;
+}
+
+footer ul li p {
+	display: none;
+}
+
+
+
+@media screen and (min-width: 65em) {
+	footer ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer ul li {
+		font-size: 1.2em;
+		padding: 3em 3em;
+		border-bottom: 1px solid #eee;
+	}
+
+	footer ul li p {
+		display: block;
+		padding: .5em 0em;
+	}
+
+}
+
+
+footer section:nth-of-type(2){
+	display: flex;
+	background-color: pink;
+	max-height: 3em;
+	justify-content: space-between;
+}
+
+footer section:nth-of-type(2) article:nth-of-type(1) img{
+width: 4em;
+align-self: center;
+}
+
+footer section:nth-of-type(2) article:nth-of-type(2) img{
+	width: 2em;
+	align-items: center;
+}
