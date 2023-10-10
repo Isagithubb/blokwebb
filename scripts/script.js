@@ -3,7 +3,7 @@ var nav = document.querySelector("body > nav > section:last-of-type");
 
 openButton.onclick = openMenu;
 
-function openMenu() {  
+function openMenu() {
   nav.classList.add("openMenu");
 }
 
@@ -11,6 +11,6 @@ var dichtButton = document.querySelector("body > nav section:last-of-type articl
 
 dichtButton.onclick = dichtMenu;
 
-function dichtMenu() {  
+function dichtMenu() {
   nav.classList.remove("openMenu");
 }

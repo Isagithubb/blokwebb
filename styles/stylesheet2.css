@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -36,23 +35,25 @@
 /* HOOFD NAV */
 
 /*alle linkjes in een grid zetten met 3 columns. de linkjes zonder stijl maken dus geen puntjes en streepjes meer.*/
- 
+
 
 
 /*checlist boven kant pagina*/
-body>section:nth-of-type(1){
+body>section:nth-of-type(1) {
 	display: flex;
 	justify-content: center;
-	padding-top: 1em ;
+	padding-top: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid pink;
 	display: none;
 }
-body > section:nth-of-type(1) > img{
+
+body>section:nth-of-type(1)>img {
 	align-items: center;
 	padding-left: 1em;
 }
-body section p{
+
+body section p {
 	align-items: center;
 	padding-left: 1em;
 }
@@ -72,11 +73,13 @@ body>nav:nth-of-type(1) ul li:nth-of-type(1) {
 	grid-column-start: 1;
 	grid-column-end: 2;
 }
-body>nav:nth-of-type(1) ul li:nth-of-type(1) input{
+
+body>nav:nth-of-type(1) ul li:nth-of-type(1) input {
 	width: 100%;
 	padding: 1em 0;
 	display: none;
 }
+
 body>nav:nth-of-type(1) ul li:nth-of-type(2) {
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -92,21 +95,22 @@ body>nav:nth-of-type(1) ul li:nth-of-type(3) {
 	align-items: center;
 }
 
-body>nav:nth-of-type(1) ul > li:nth-of-type(3)> a:first-of-type{
+body>nav:nth-of-type(1) ul>li:nth-of-type(3)>a:first-of-type {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	color: black;
 	display: none;
 }
-body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type img{
+
+body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type img {
 	max-width: 2em;
 }
 
 body>nav:nth-of-type(1) ul li:nth-of-type(4) {
 	grid-column-start: 1;
 	grid-column-end: 4;
-	
+
 }
 
 body>nav:nth-of-type(1) ul li:nth-of-type(4) input {
@@ -119,7 +123,7 @@ body>nav:nth-of-type(1) ul li:nth-of-type(4) input {
 
 /*hamburger menu uitgeklapt groot scherm die op klein scherm niet zichtbaar is*/
 
-body nav:nth-of-type(1) ul:nth-of-type(2){
+body nav:nth-of-type(1) ul:nth-of-type(2) {
 	display: flex;
 	background-color: black;
 	color: white;
@@ -133,14 +137,14 @@ body nav:nth-of-type(1) ul:nth-of-type(2){
 
 
 /* zorgen dat de uitklap menu absolute staan ten opzichte van de nav, niet de hele body.*/
-body > nav {
+body>nav {
 	position: relative;
 }
 
 
 
 /* hamburger menu die uit moet klappen links naast het scherm zetten zodat je hem niet ziet en zodat hij er als het waren naar binnen kan sliden*/
-body > nav > section:last-of-type {
+body>nav>section:last-of-type {
 	display: flex;
 	position: absolute;
 	top: 0;
@@ -149,58 +153,60 @@ body > nav > section:last-of-type {
 	height: 100vh;
 	z-index: 99;
 	translate: -100% 0%;
-    transition: translate 0.3s;
+	transition: translate 0.3s;
 }
 
 /* een class aanmaken wat er voor zorgt dat het hamburger menu die links uit de pagina staat weer op de pagina tevoorschijn komt. Deze class wordt aangeroepen in javascript.*/
 
-body > nav > section:last-of-type.openMenu {
+body>nav>section:last-of-type.openMenu {
 	translate: 0% 0%;
 }
 
 /* styling van de hamburger menu*/
-body > nav section:last-of-type article:first-of-type {
+body>nav section:last-of-type article:first-of-type {
 	width: 100%;
 	background-color: white;
-	
+
 }
 
-body > nav section:last-of-type article:first-of-type section:first-of-type a{
-text-decoration: none;
-color: black;
+body>nav section:last-of-type article:first-of-type section:first-of-type a {
+	text-decoration: none;
+	color: black;
 }
-body > nav section:last-of-type article:first-of-type section:first-of-type h2{
+
+body>nav section:last-of-type article:first-of-type section:first-of-type h2 {
 	font-weight: lighter;
 }
 
-body > nav section:last-of-type article:nth-of-type(2) button{
+body>nav section:last-of-type article:nth-of-type(2) button {
 	background-color: pink;
 	border: none;
 }
 
-body > nav section:last-of-type article:nth-of-type(2) button img{
+body>nav section:last-of-type article:nth-of-type(2) button img {
 	height: 3em;
 	padding: .6em;
 }
 
-body > nav section:last-of-type article section {
+body>nav section:last-of-type article section {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0em 1em .5em .5em;
 }
-body > nav section:last-of-type article section img {
+
+body>nav section:last-of-type article section img {
 	width: 2em;
 }
 
-body > nav section:last-of-type article ul {
+body>nav section:last-of-type article ul {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1em;
 }
 
-body > nav section:last-of-type article ul li {
+body>nav section:last-of-type article ul li {
 	width: 100%;
 	padding: 1em 0.5em;
 	background-color: #F6F5F5;
@@ -215,145 +221,150 @@ body > nav section:last-of-type article ul li {
 @media screen and (min-width: 65em) {
 
 
-/*checlist boven kant pagina*/
-body>section:nth-of-type(1){
-	display: flex;
-	justify-content: center;
-	padding-top: 1em ;
-	padding-bottom: 1em;
-	border-bottom: 1px solid pink;
-	
-}
-body section:nth-of-type(1)> img{
-	align-items: center;
-	padding-left: 1em;
-}
-body >section:nth-of-type(1) > p{
-	align-items: center;
-	padding-left: 1em;
-}
+	/*checlist boven kant pagina*/
+	body>section:nth-of-type(1) {
+		display: flex;
+		justify-content: center;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid pink;
+
+	}
+
+	body section:nth-of-type(1)>img {
+		align-items: center;
+		padding-left: 1em;
+	}
+
+	body>section:nth-of-type(1)>p {
+		align-items: center;
+		padding-left: 1em;
+	}
 
 
-/*nav boven*/
+	/*nav boven*/
 
-body>nav:nth-of-type(1) ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: .6em;
-	align-items: center;
-	list-style: none;
-}
+	body>nav:nth-of-type(1) ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: .6em;
+		align-items: center;
+		list-style: none;
+	}
 
-body>nav:nth-of-type(1) ul li:nth-of-type(1) button {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	display: none;
-}
-body>nav:nth-of-type(1) ul li:nth-of-type(1) input{
-	width: 100%;
-	padding: 1em 0;
-	display: block;
-	justify-self: center;
-	margin-left: 2em;
-}
+	body>nav:nth-of-type(1) ul li:nth-of-type(1) button {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		display: none;
+	}
 
-body>nav:nth-of-type(1) ul li:nth-of-type(2) {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	display: flex;
-	justify-content: center;
-}
+	body>nav:nth-of-type(1) ul li:nth-of-type(1) input {
+		width: 100%;
+		padding: 1em 0;
+		display: block;
+		justify-self: center;
+		margin-left: 2em;
+	}
 
-body>nav:nth-of-type(1) ul li:nth-of-type(3) {
-	grid-column-start: 3;
-	grid-column-end: 4;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+	body>nav:nth-of-type(1) ul li:nth-of-type(2) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		display: flex;
+		justify-content: center;
+	}
 
-body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type{
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	color: black;
-	display: block;
-}
-body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type img{
-	max-width: 2em;
-}
+	body>nav:nth-of-type(1) ul li:nth-of-type(3) {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-body>nav:nth-of-type(1) ul li:nth-of-type(4) {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	
-}
+	body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: black;
+		display: block;
+	}
 
-body>nav:nth-of-type(1) ul li:nth-of-type(4) input {
-	width: 75%;
-	padding: 1em 0;
-	align-self: center;
-	justify-content: end;
-	display: none;
-}
+	body>nav:nth-of-type(1) ul li:nth-of-type(3) a:first-of-type img {
+		max-width: 2em;
+	}
 
-/*hamburger menu uitgeklapt*/
+	body>nav:nth-of-type(1) ul li:nth-of-type(4) {
+		grid-column-start: 1;
+		grid-column-end: 2;
 
-body nav:nth-of-type(1) ul:nth-of-type(2){
-	display: flex;
-	background-color: black;
-	color: white;
-	margin: 0;
-	height: 3em;
-	font-size: 1em;
-	align-items: center;
-	justify-content: space-between;
-	display: flex;
-}
+	}
+
+	body>nav:nth-of-type(1) ul li:nth-of-type(4) input {
+		width: 75%;
+		padding: 1em 0;
+		align-self: center;
+		justify-content: end;
+		display: none;
+	}
+
+	/*hamburger menu uitgeklapt*/
+
+	body nav:nth-of-type(1) ul:nth-of-type(2) {
+		display: flex;
+		background-color: black;
+		color: white;
+		margin: 0;
+		height: 3em;
+		font-size: 1em;
+		align-items: center;
+		justify-content: space-between;
+		display: flex;
+	}
 
 }
 
 
 /*HEADER*/
 
-header > h1{
-    font-weight: lighter;
-    font-size: 1.3em;
-    padding-left: 1.3em;
-} 
-
-header > article{
-    padding:1em;
-}
-header>article{
-    display: flex;
+header>h1 {
+	font-weight: lighter;
+	font-size: 1.3em;
+	padding-left: 1.3em;
 }
 
-header > article button {
-    padding: 1em;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 5%;
-    border: solid;
-    border-color: lightgrey;
+header>article {
+	padding: 1em;
 }
 
-header> button{
-    padding: 1em;
-    font-weight: lighter;
-    background-color: white;
-    border-radius: 5%;
-    border: solid;
-    border-color: lightgrey;
-    width: 100%;
-    margin-bottom: 3em;
+header>article {
+	display: flex;
+}
+
+header>article button {
+	padding: 1em;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 5%;
+	border: solid;
+	border-color: lightgrey;
+}
+
+header>button {
+	padding: 1em;
+	font-weight: lighter;
+	background-color: white;
+	border-radius: 5%;
+	border: solid;
+	border-color: lightgrey;
+	width: 100%;
+	margin-bottom: 3em;
 }
 
 
 /*MAIN*/
-main > section > h2{
-    font-weight: lighter;
-    font-size: 1em;
+main>section>h2 {
+	font-weight: lighter;
+	font-size: 1em;
 }
 
 main section:first-of-type {
@@ -366,23 +377,23 @@ main section:first-of-type {
 	width: 100%;
 }
 
-main > section:first-of-type {
+main>section:first-of-type {
 	flex-direction: column;
 }
 
-main > section:first-of-type > section {
+main>section:first-of-type>section {
 	padding: 0;
 	justify-content: flex-start;
-    width: 100%;
+	width: 100%;
 }
 
-main > section:first-of-type article img {
+main>section:first-of-type article img {
 	padding-left: 0;
 }
 
 
 
-main > section:first-of-type article {
+main>section:first-of-type article {
 	font-size: small;
 	font-weight: lighter;
 	background-color: white;
@@ -392,94 +403,99 @@ main > section:first-of-type article {
 	grid-template-rows: 2;
 }
 
-main > section:first-of-type article img {
+main>section:first-of-type article img {
 	max-block-size: 20em;
 	grid-column-start: 1;
 	grid-row-start: 1;
 }
 
-main > section:first-of-type article h3 {
+main>section:first-of-type article h3 {
 	grid-column-start: 1;
 	grid-row-start: 2;
-    font-weight: lighter;
+	font-weight: lighter;
 }
 
-main > section:first-of-type article p {
+main>section:first-of-type article p {
 	grid-column-start: 1;
 	grid-row-start: 2;
 	margin-top: 2em;
-    padding-left: 0;
-    font-weight: bold;
+	padding-left: 0;
+	font-weight: bold;
 }
 
 
 
 /*grote feed*/
 
-main> section:nth-of-type(2){
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-main > section:nth-of-type(2) article{
- padding: .5em;
- max-width: 100%;
-display: grid;
-grid-template-columns: 1;
-grid-template-rows: 1;
+main>section:nth-of-type(2) {
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
-main > section:nth-of-type(2) article > img{
-    max-width:100%;
-    padding-left: 0;
-    grid-column-start: 1;
+main>section:nth-of-type(2) article {
+	padding: .5em;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: 1;
+}
+
+main>section:nth-of-type(2) article>img {
+	max-width: 100%;
+	padding-left: 0;
+	grid-column-start: 1;
 	grid-row-start: 1;
 }
-main > section:nth-of-type(2) article > button{
-    border:none;
-    max-width: 2em;
-    grid-column-start: 1;
+
+main>section:nth-of-type(2) article>button {
+	border: none;
+	max-width: 2em;
+	grid-column-start: 1;
 	grid-row-start: 1;
 	justify-self: end;
 	height: fit-content;
 
 }
-main > section:nth-of-type(2) article p{
-    padding-left: 0em;
-    grid-column-start: 1;
-	grid-row-start: 2;
-}
-main > section:nth-of-type(2) article h2{
-    grid-column-start: 1;
+
+main>section:nth-of-type(2) article p {
+	padding-left: 0em;
+	grid-column-start: 1;
 	grid-row-start: 2;
 }
 
-@media screen and (min-width: 50em){
-    main> section:nth-of-type(2){
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-    main > section:nth-of-type(2) article {
-     padding: .5em;
-     max-width: 100%;
-    }
-   
-    main > section:nth-of-type(2) article > img{
-        max-width: 100%;
-        padding-left: 0;
-    
-    }
+main>section:nth-of-type(2) article h2 {
+	grid-column-start: 1;
+	grid-row-start: 2;
 }
 
-section:nth-of-type(3) button{
- width: 100%;
-margin-top: 1.5em;
-margin-bottom: 2em;
-height: 2.5em;
-font-weight: bolder;
-background-color: white;
-border-radius: .5em;
-border: solid black;
-font-size: 1em;
+@media screen and (min-width: 50em) {
+	main>section:nth-of-type(2) {
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+
+	main>section:nth-of-type(2) article {
+		padding: .5em;
+		max-width: 100%;
+	}
+
+	main>section:nth-of-type(2) article>img {
+		max-width: 100%;
+		padding-left: 0;
+
+	}
+}
+
+section:nth-of-type(3) button {
+	width: 100%;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	height: 2.5em;
+	font-weight: bolder;
+	background-color: white;
+	border-radius: .5em;
+	border: solid black;
+	font-size: 1em;
 
 }
 
@@ -622,19 +638,19 @@ footer ul li p {
 }
 
 
-footer section:nth-of-type(2){
+footer section:nth-of-type(2) {
 	display: flex;
 	background-color: pink;
 	max-height: 3em;
 	justify-content: space-between;
 }
 
-footer section:nth-of-type(2) article:nth-of-type(1) img{
-width: 4em;
-align-self: center;
+footer section:nth-of-type(2) article:nth-of-type(1) img {
+	width: 4em;
+	align-self: center;
 }
 
-footer section:nth-of-type(2) article:nth-of-type(2) img{
+footer section:nth-of-type(2) article:nth-of-type(2) img {
 	width: 2em;
 	align-items: center;
 }
