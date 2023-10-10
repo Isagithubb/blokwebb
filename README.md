@@ -41,11 +41,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.my-jewellery.com/nl-nl/bestsellers.html 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  home pagina 
+  De eerste pagina die ik ga  namaken is de home pagina.
+  <br></br>
   <img src="readme-images/Homepage.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  bestsellers pagina 
+  Een andere pagina is de bestsellers pagina.
+  <br></br>
   <img src="readme-images/Shopnieuw.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -60,7 +62,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  Erg veel fouten als ik het in de w3c validater doe.
+  - Erg veel fouten als ik het in de w3c validater doe.
+  - qua layout is de site heel mooi en netjes
+  - De html als ik op inspecteren klik bestaat uit super veel divjes etc.
+  - 
 
 </details>
 
@@ -94,19 +99,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-wat goed gaat is de html schrijen. ik vond het lastig om te begrijpen hoe een grid in elkaar zit en hoe je uiteindelijk een responsive website kon maken.
+  Wat goed gaat deze week is de html schrijen. ik vond het lastig om te begrijpen hoe een grid in elkaar zit en hoe je uiteindelijk een responsive website kon maken. Ik heb daarom veel grid garden gespeeld en video's over grid gekeken. 
 
 <img src="readme-images/codescreenshot1.png" width="375px" alt="screenshot van code ">
- Op deze screenshot zie je een slider die ik heb gecodeerd zonder een grid te gebruiken, ik hoop dat ik deze ul in een grid kan zetten en dat de button dan ook op de foto kan komen.
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+ 
+ Op deze screenshot zie je een slider die ik heb gecodeerd zonder een grid te gebruiken.
+ Ik hoop dat ik deze ul in een grid kan zetten, zodat het makkelijker responsive wordt en ik kan leren hoe ik een grid gebruik.
+ 
+ Ook wil ik graag nog een hartjes button op de foto kan komen zodat het er helemaal af is dit gedeelte.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -114,7 +114,7 @@ wat goed gaat is de html schrijen. ik vond het lastig om te begrijpen hoe een gr
   - veel proberen en opzoeken over grid
   - alle opdrachten goed doen
   - Hulp vragen aan de studentenassistent of de docent als het niet lukt om op weg te komen
-  - ...
+
 
 </details>
 
@@ -131,27 +131,21 @@ wat goed gaat is de html schrijen. ik vond het lastig om te begrijpen hoe een gr
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 <img src="readme-images/codescreenshot2.png" width="375px" alt="screenshot van code ">
-Wat erg goed gaat is dat ik een grid heb en het begrijp!! daarnaast ben ik erachter gekomen hoe een media query werkt en ben ik over het algemeen veel blijer met het resultaat wat ik nu heb!
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+Wat erg goed gaat is dat ik een grid heb en het begrijp!! 
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Daarnaast ben ik erachter gekomen hoe een media query werkt.
+Ik heb geleerd dat sommige veranderingen op een pagina niet alleen door 100% responsive maken bestaan. Maar dus ook door te zeggen dat vanaf een bepaalde grootte het scherm en de html etc er anders uit moeten zien. Ik vond dit een erg interessant onderwerp, omdat ik door deze kennis ook nog oude kennis mee kon nemen. Bijvoorbeeld de display none functie. die kan je op een html element zetten en vervolgens laten verschijnen door display block in de media query te zetten.
 
+Door al deze nieuwe informatie heb ik weer goede moed en weet ik hoe ik andere functies van mijn site moet gaan coderen. Bijvoorbeeld de footer. Hierdoor ben ik over het algemeen veel blijer met het resultaat wat ik nu heb! 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
   - Veel proberen, maakt niet uit als het niet in een keer lukt
   - Er zijn meerdere manieren om iets te bereiken, ik ga kijken wat de beste is voor mijzelf
-  - nog een punt
-- ...
+  - Zelfstandig gaan knallen en uitproberen.
+  - mediaquery gebruiken voor de footer.
 
 </details>
-
 
 
 
@@ -163,10 +157,14 @@ Wat erg goed gaat is dat ik een grid heb en het begrijp!! daarnaast ben ik erach
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
- er is veel verbeterd, ik heb bijvoorbeeld alle alts geshreven en er is geen horizontale schuiving meer.
+
+ - Ik heb bijvoorbeeld alle alts geshreven 
+ - Er is geen horizontale schuiving meer.
+ - De website lijkt al op een geheel
+ - ik zie soms niet het verschil met mijn website en de originele haha! 
+ - Ik ben content met de informatie en hoe mijn html er uit ziet
+ - Ik heb alle foto's niet gedownload maar de link van de website neergezet.
 </details>
-
-
 
 
 
@@ -178,25 +176,15 @@ Wat erg goed gaat is dat ik een grid heb en het begrijp!! daarnaast ben ik erach
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 <img src="readme-images/codescreenshot3.png" width="375px" alt="screenshot van code ">
-Ik ben mijn 2e pagina goed gaan stylen met css en responsive maken. Ook ben ik alle puntjes op de i gaan zetten en heb ik een hamburger menu laten werken.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Ik ben mijn 2e pagina goed gaan stylen met css en responsive maken. 
+Ook ben ik alle puntjes op de i gaan zetten en heb ik een hamburger menu laten werken.
+Voor de meeste tijd heb ik aan mijn 1e pagina gewerkt en gezeten. Dat gaf mij een beetje stress maar ik heb gelukkig nu wel veel kunnen veranderen aan de tweede pagina. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
   - Niet opgeven lol
   - Veel tijd aan besteden en nog even strijden om zo veel mogelijk uit de komende week te halen
-  - nog een punt
-  - ...
 
 </details>
 
@@ -214,20 +202,20 @@ Ik ben mijn 2e pagina goed gaan stylen met css en responsive maken. Ook ben ik a
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Korte omschrijving met plaatjes:
 
-Waar ik erg trots op ben is dat ik echt heel veel heb geleerd deze weken. Ik begon met weinig tot basiskennis over een net html schrijven en ben nu op het punt dat ik geniet van code schrijven, omdat ik zo veel heb geleerd. een ding daarvan is bijvoorbeeld een grid kunnen gebruiken op verschillende manieren. 
+  Waar ik erg trots op ben is dat ik echt heel veel heb geleerd deze weken. Ik begon met weinig tot basiskennis over een net html schrijven en ben nu op het punt dat ik geniet van code schrijven, omdat ik zo veel heb geleerd. een ding daarvan is bijvoorbeeld een grid kunnen gebruiken op verschillende manieren. 
+  <br> </br>
   <img src="readme-images/eindresultaat2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-Wat helaas niet is gelukt is het goed schalen van foto's of in dit geval een slider. 
+
+  Wat helaas niet is gelukt is het goed schalen van foto's of in dit geval een slider. 
+  <br> </br>
   <img src="readme-images/eindresultaat3.png" width="375px" alt="bummer">
 </details>
-
-
-
 
 
 ## Bronnenlijst
