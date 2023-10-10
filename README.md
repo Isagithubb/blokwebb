@@ -61,8 +61,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  
-[FED 23-24 - Blok 1 - WCAG checklist-2.pdf](https://github.com/Isagithubb/blokwebb/files/12858672/FED.23-24.-.Blok.1.-.WCAG.checklist-2.pdf)
+  [FED 23-24 - Blok 1 - WCAG checklist-2.pdf](https://github.com/Isagithubb/blokwebb/files/12858701/FED.23-24.-.Blok.1.-.WCAG.checklist-2.pdf)
+
 
 
   - Erg veel fouten als ik het in de w3c validater doe.
